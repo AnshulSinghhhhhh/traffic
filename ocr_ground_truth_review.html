@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>IDAHR ANPR — Manual OCR Ground-Truth Review Package</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 24px; background: #f8fafc; color: #1e293b; }
+  h1 { color: #0f172a; margin-bottom: 4px; }
+  .subtitle { color: #64748b; font-size: 15px; margin-bottom: 20px; }
+  .notice { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 12px 16px; border-radius: 4px; margin-bottom: 24px; font-size: 14px; color: #1e40af; }
+  table { width: 100%; border-collapse: collapse; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); font-size: 13px; }
+  th { background: #f1f5f9; padding: 10px 12px; text-align: left; font-weight: 600; color: #475569; border-bottom: 1px solid #e2e8f0; }
+  td { padding: 10px 12px; border-bottom: 1px solid #e2e8f0; vertical-align: middle; }
+  tr:hover { background: #f8fafc; }
+  .crop-img { height: 48px; border: 1px solid #cbd5e1; border-radius: 4px; background: #000; object-fit: contain; }
+  .badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .badge-corrected { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+  .badge-raw { background: #f1f5f9; color: #475569; }
+  .conf-low { color: #dc2626; font-weight: 600; }
+  .conf-mid { color: #d97706; }
+  .conf-high { color: #16a34a; font-weight: 600; }
+  input[type='text'] { border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 8px; width: 120px; font-size: 12px; font-family: monospace; }
+  .signoff { margin-top: 32px; background: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; }
+</style>
+</head>
+<body>
+<h1>IDAHR ANPR — Manual OCR Ground-Truth Review Package</h1>
+<div class='subtitle'>Empirical evaluation package covering all N = 35 tracked vehicles from source.mp4 (4K, 300 sampled frames)</div>
+<div class='notice'>
+  <strong>Ground Rule for Manual Verification</strong>: All checkboxes and validation fields are blank. Examine each plate crop image against the raw and normalized plate readings. Do not guess. Report honest findings.
+</div>
+<table>
+<thead>
+  <tr>
+    <th>#</th>
+    <th>Track</th>
+    <th>Plate Crop</th>
+    <th>Raw OCR</th>
+    <th>Normalized Plate</th>
+    <th>Conf</th>
+    <th>Attempts</th>
+    <th>Timestamp</th>
+    <th>Matches?</th>
+    <th>Actual Plate (if diff)</th>
+    <th>Readability</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1</td>
+    <td><strong>ID 139</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_139_BPF.jpg' alt='Track 139'></td>
+    <td><code>BPF</code></td>
+    <td><span class='badge badge-raw'>BPF</span></td>
+    <td class='conf-low'>0.178</td>
+    <td>5</td>
+    <td><code>50.800000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><strong>ID 147</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_147_SC5506.jpg' alt='Track 147'></td>
+    <td><code>SC5506</code></td>
+    <td><span class='badge badge-raw'>SC5506</span></td>
+    <td class='conf-low'>0.296</td>
+    <td>8</td>
+    <td><code>57.200000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><strong>ID 27</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_027_OU62HY.jpg' alt='Track 27'></td>
+    <td><code>OU62HY</code></td>
+    <td><span class='badge badge-raw'>OU62HY</span></td>
+    <td class='conf-low'>0.299</td>
+    <td>8</td>
+    <td><code>20.400000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><strong>ID 121</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_121_CE9NL.jpg' alt='Track 121'></td>
+    <td><code>CE9NL</code></td>
+    <td><span class='badge badge-raw'>CE9NL</span></td>
+    <td class='conf-low'>0.299</td>
+    <td>8</td>
+    <td><code>56.200000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><strong>ID 73</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_073_KHO6KSU.jpg' alt='Track 73'></td>
+    <td><code>KHO6KSU</code></td>
+    <td><span class='badge badge-corrected'>KHO6KSU</span></td>
+    <td class='conf-low'>0.347</td>
+    <td>2</td>
+    <td><code>24.400000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><strong>ID 137</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_137_GIOSF.jpg' alt='Track 137'></td>
+    <td><code>GIOSF</code></td>
+    <td><span class='badge badge-raw'>GIOSF</span></td>
+    <td class='conf-low'>0.349</td>
+    <td>6</td>
+    <td><code>59</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><strong>ID 149</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_149_DDU06XRO.jpg' alt='Track 149'></td>
+    <td><code>DDU06XRO</code></td>
+    <td><span class='badge badge-raw'>DDU06XRO</span></td>
+    <td class='conf-low'>0.397</td>
+    <td>6</td>
+    <td><code>54.400000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><strong>ID 8</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_008_KH05ZZK.jpg' alt='Track 8'></td>
+    <td><code>KHOSZZK</code></td>
+    <td><span class='badge badge-corrected'>KH05ZZK</span></td>
+    <td class='conf-mid'>0.450</td>
+    <td>8</td>
+    <td><code>04.800000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><strong>ID 78</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_078_EY09YUS.jpg' alt='Track 78'></td>
+    <td><code>EY09YUS</code></td>
+    <td><span class='badge badge-raw'>EY09YUS</span></td>
+    <td class='conf-mid'>0.462</td>
+    <td>8</td>
+    <td><code>29.800000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><strong>ID 6</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_006_GXJ5.jpg' alt='Track 6'></td>
+    <td><code>GXJ5</code></td>
+    <td><span class='badge badge-raw'>GXJ5</span></td>
+    <td class='conf-mid'>0.468</td>
+    <td>8</td>
+    <td><code>01.800000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><strong>ID 25</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_025_EY61NBG.jpg' alt='Track 25'></td>
+    <td><code>EYGINBG</code></td>
+    <td><span class='badge badge-corrected'>EY61NBG</span></td>
+    <td class='conf-mid'>0.478</td>
+    <td>8</td>
+    <td><code>09.800000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><strong>ID 114</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_114_LL61PZS.jpg' alt='Track 114'></td>
+    <td><code>LL6IPZS</code></td>
+    <td><span class='badge badge-corrected'>LL61PZS</span></td>
+    <td class='conf-mid'>0.482</td>
+    <td>3</td>
+    <td><code>44.600000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><strong>ID 57</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_057_LN15ZZC.jpg' alt='Track 57'></td>
+    <td><code>LNISZZC</code></td>
+    <td><span class='badge badge-corrected'>LN15ZZC</span></td>
+    <td class='conf-mid'>0.485</td>
+    <td>8</td>
+    <td><code>26</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><strong>ID 1</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_001_AP05JEO.jpg' alt='Track 1'></td>
+    <td><code>APOSJEO</code></td>
+    <td><span class='badge badge-corrected'>AP05JEO</span></td>
+    <td class='conf-mid'>0.498</td>
+    <td>8</td>
+    <td><code>05.200000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td><strong>ID 65</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_065_DA07CLX.jpg' alt='Track 65'></td>
+    <td><code>DAQ7CLX</code></td>
+    <td><span class='badge badge-corrected'>DA07CLX</span></td>
+    <td class='conf-mid'>0.499</td>
+    <td>8</td>
+    <td><code>29</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><strong>ID 33</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_033_HNI4C.jpg' alt='Track 33'></td>
+    <td><code>HNI4C</code></td>
+    <td><span class='badge badge-raw'>HNI4C</span></td>
+    <td class='conf-mid'>0.500</td>
+    <td>8</td>
+    <td><code>13.200000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><strong>ID 43</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_043_NA54KGJ.jpg' alt='Track 43'></td>
+    <td><code>NA54KGJ</code></td>
+    <td><span class='badge badge-raw'>NA54KGJ</span></td>
+    <td class='conf-mid'>0.504</td>
+    <td>8</td>
+    <td><code>15.200000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td><strong>ID 34</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_034_GJ05EPD.jpg' alt='Track 34'></td>
+    <td><code>GJOSEPD</code></td>
+    <td><span class='badge badge-corrected'>GJ05EPD</span></td>
+    <td class='conf-mid'>0.510</td>
+    <td>8</td>
+    <td><code>23.600000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td><strong>ID 109</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_109_LP14LJA.jpg' alt='Track 109'></td>
+    <td><code>LPI4LJA</code></td>
+    <td><span class='badge badge-corrected'>LP14LJA</span></td>
+    <td class='conf-mid'>0.521</td>
+    <td>8</td>
+    <td><code>46.400000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td><strong>ID 10</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_010_NR02FKD.jpg' alt='Track 10'></td>
+    <td><code>NRQ2FKD</code></td>
+    <td><span class='badge badge-corrected'>NR02FKD</span></td>
+    <td class='conf-mid'>0.531</td>
+    <td>8</td>
+    <td><code>09.200000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td><strong>ID 19</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_019_LH13VCY.jpg' alt='Track 19'></td>
+    <td><code>LHI3VCY</code></td>
+    <td><span class='badge badge-corrected'>LH13VCY</span></td>
+    <td class='conf-mid'>0.532</td>
+    <td>2</td>
+    <td><code>04.400000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td><strong>ID 36</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_036_AY08HVF.jpg' alt='Track 36'></td>
+    <td><code>AYO8HVF</code></td>
+    <td><span class='badge badge-corrected'>AY08HVF</span></td>
+    <td class='conf-mid'>0.535</td>
+    <td>8</td>
+    <td><code>13.600000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td><strong>ID 79</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_079_50WNA.jpg' alt='Track 79'></td>
+    <td><code>50WNA</code></td>
+    <td><span class='badge badge-raw'>50WNA</span></td>
+    <td class='conf-high'>0.555</td>
+    <td>8</td>
+    <td><code>30.200000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td><strong>ID 127</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_127_NL64OGX.jpg' alt='Track 127'></td>
+    <td><code>NL640GX</code></td>
+    <td><span class='badge badge-corrected'>NL64OGX</span></td>
+    <td class='conf-high'>0.556</td>
+    <td>8</td>
+    <td><code>45.600000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td><strong>ID 23</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_023_AK64DMV.jpg' alt='Track 23'></td>
+    <td><code>AK64DMV</code></td>
+    <td><span class='badge badge-raw'>AK64DMV</span></td>
+    <td class='conf-high'>0.560</td>
+    <td>8</td>
+    <td><code>17.400000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td><strong>ID 5</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_005_NS41SAN.jpg' alt='Track 5'></td>
+    <td><code>NSAISAN</code></td>
+    <td><span class='badge badge-corrected'>NS41SAN</span></td>
+    <td class='conf-high'>0.563</td>
+    <td>8</td>
+    <td><code>00.200000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td><strong>ID 55</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_055_KH06KSU.jpg' alt='Track 55'></td>
+    <td><code>KH06KSU</code></td>
+    <td><span class='badge badge-raw'>KH06KSU</span></td>
+    <td class='conf-high'>0.563</td>
+    <td>5</td>
+    <td><code>25</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td><strong>ID 3</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_003_NA13NRU.jpg' alt='Track 3'></td>
+    <td><code>NAI3NRU</code></td>
+    <td><span class='badge badge-corrected'>NA13NRU</span></td>
+    <td class='conf-high'>0.599</td>
+    <td>6</td>
+    <td><code>00.600000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td><strong>ID 107</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_107_WG65ZFX.jpg' alt='Track 107'></td>
+    <td><code>WG65ZFX</code></td>
+    <td><span class='badge badge-raw'>WG65ZFX</span></td>
+    <td class='conf-high'>0.601</td>
+    <td>8</td>
+    <td><code>41</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td><strong>ID 51</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_051_AF65JKV.jpg' alt='Track 51'></td>
+    <td><code>AF65JKV</code></td>
+    <td><span class='badge badge-raw'>AF65JKV</span></td>
+    <td class='conf-high'>0.606</td>
+    <td>8</td>
+    <td><code>23</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td><strong>ID 16</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_016_FJ14ZHY.jpg' alt='Track 16'></td>
+    <td><code>FJI4ZHY</code></td>
+    <td><span class='badge badge-corrected'>FJ14ZHY</span></td>
+    <td class='conf-high'>0.610</td>
+    <td>8</td>
+    <td><code>09.600000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td><strong>ID 138</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_138_HX52BPF.jpg' alt='Track 138'></td>
+    <td><code>HX52BPF</code></td>
+    <td><span class='badge badge-raw'>HX52BPF</span></td>
+    <td class='conf-high'>0.614</td>
+    <td>4</td>
+    <td><code>52.200000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td><strong>ID 61</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_061_EF10DZT.jpg' alt='Track 61'></td>
+    <td><code>EFIODZT</code></td>
+    <td><span class='badge badge-corrected'>EF10DZT</span></td>
+    <td class='conf-high'>0.629</td>
+    <td>8</td>
+    <td><code>18.400000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td><strong>ID 11</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_011_BG65USJ.jpg' alt='Track 11'></td>
+    <td><code>BGG5USJ</code></td>
+    <td><span class='badge badge-corrected'>BG65USJ</span></td>
+    <td class='conf-high'>0.631</td>
+    <td>8</td>
+    <td><code>15.400000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td><strong>ID 97</strong></td>
+    <td><img class='crop-img' src='plate_crops/track_097_BP63LYH.jpg' alt='Track 97'></td>
+    <td><code>BP63LYH</code></td>
+    <td><span class='badge badge-raw'>BP63LYH</span></td>
+    <td class='conf-high'>0.641</td>
+    <td>8</td>
+    <td><code>38.400000</code></td>
+    <td><label><input type='checkbox'> Yes</label>&nbsp;<label><input type='checkbox'> No</label></td>
+    <td><input type='text' placeholder='Actual plate'></td>
+    <td><label><input type='radio' name='r_{tid}'> Clear</label><br><label><input type='radio' name='r_{tid}'> Marg.</label><br><label><input type='radio' name='r_{tid}'> Illeg.</label></td>
+    <td><input type='text' style='width: 140px;' placeholder='Notes'></td>
+  </tr>
+</tbody>
+</table>
+<div class='signoff'>
+  <h3>Reviewer Sign-Off</h3>
+  <p><strong>Reviewer Name:</strong> ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; <strong>Date:</strong> ___________________________</p>
+  <p><strong>Total Validated Matches:</strong> _____ / 35 &nbsp;&nbsp;&nbsp;&nbsp; <strong>Corrected Readings Confirmed:</strong> _____</p>
+</div>
+</body>
+</html>

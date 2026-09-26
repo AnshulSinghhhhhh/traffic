@@ -1,0 +1,27 @@
+# Authoritative DVLA Local Memory Tags (2001 - Present)
+# Total: 229 valid two-letter prefixes
+UK_AREA_CODES = {
+    "AA", "AB", "AC", "AD", "AE", "AF", "AG", "AH", "AJ", "AK",
+    "AL", "AM", "AN", "AO", "AP", "AR", "AS", "AT", "AU", "AV",
+    "AW", "AX", "AY", "BA", "BB", "BC", "BD", "BE", "BF", "BG",
+    "BH", "BJ", "BK", "BL", "BM", "BN", "BO", "BP", "BR", "BS",
+    "BT", "BU", "BV", "BW", "BX", "CA", "CB", "CC", "CD", "CE",
+    "CF", "CG", "CH", "CJ", "CK", "CL", "CM", "CN", "CO", "CP",
+    "CR", "CS", "CT", "CU", "CV", "CW", "CX", "CY", "DA", "DB",
+    "DC", "DD", "DE", "DF", "DG", "DH", "DJ", "DK", "DL", "DM",
+    "DN", "DO", "DP", "DS", "DT", "DU", "DV", "DW", "DX", "DY",
+    "EA", "EB", "EC", "ED", "EE", "EF", "EG", "EH", "EJ", "EK",
+    "EL", "EM", "EN", "EO", "EP", "ER", "ES", "ET", "EU", "EV",
+    "EW", "EX", "EY", "FA", "FB", "FC", "FD", "FE", "FF", "FG",
+    "FH", "FJ", "FK", "FL", "FM", "FN", "FO", "FP", "FR", "FS",
+    "FT", "FU", "FV", "FW", "FX", "FY", "GA", "GB", "GC", "GD",
+    "GE", "GF", "GG", "GH", "GJ", "GK", "GL", "GM", "GN", "HA",
+    "HB", "HC", "HD", "HE", "HF", "HG", "HH", "HJ", "HK", "HL",
+    "HM", "HN", "HP", "HR", "HS", "HT", "HU", "HV", "HX", "HY",
+    "KA", "KB", "KC", "KD", "KE", "KF", "KG", "KH", "KJ", "KK",
+    "KL", "KM", "KN", "KO", "KP", "KR", "KS", "KT", "KU", "KV",
+    "KW", "KX", "KY", "LA", "LB", "LC", "LD", "LE", "LF", "LG",
+    "LH", "LJ", "LK", "LL", "LM", "LN", "LO", "LP", "LR", "LS",
+    "LT", "LU", "LV", "LW", "LX", "LY", "OO", "OP", "OR", "OS",
+    "OT", "OU", "OV", "OW", "OX", "OY", "RR", "WW", "YY",
+}

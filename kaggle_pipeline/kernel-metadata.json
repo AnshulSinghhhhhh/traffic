@@ -1,0 +1,15 @@
+{
+  "id": "anshulsingh45/idahr-anpr-pipeline",
+  "title": "IDAHR ANPR Pipeline",
+  "code_file": "detect.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "anshulsingh45/idahr-video-and-weights"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
