@@ -1,0 +1,85 @@
+claim,value,status,source,notes
+YOLOv8 plate detection precision,0.9780,FOUND,idahr_plate_detector.pt metadata / results.md:28,Trained on Roboflow License-Plate-Recognition-4
+YOLOv8 plate detection recall,0.9572,FOUND,idahr_plate_detector.pt metadata / results.md:29,Trained on Roboflow License-Plate-Recognition-4
+YOLOv8 plate detection mAP50,0.9815,FOUND,idahr_plate_detector.pt metadata / results.md:30,Trained on Roboflow License-Plate-Recognition-4
+YOLOv8 plate detection mAP50-95,0.6922,FOUND,idahr_plate_detector.pt metadata / results.md:31,Trained on Roboflow License-Plate-Recognition-4
+YOLOv8 training epochs,15,FOUND,idahr_plate_detector.pt metadata / detect.ipynb:Cell 4,Ultralytics 8.3.40 training configuration
+YOLOv8 input resolution,640x640,FOUND,idahr_plate_detector.pt metadata / results.md:27,Square aspect ratio with letterbox padding
+YOLOv8 training dataset,License-Plate-Recognition-4,FOUND,idahr_plate_detector.pt data.yaml path,Roboflow public domain repository
+YOLOv8 training image count,MISSING,MISSING,Colab path /content/License-Plate-Recognition-4 was ephemeral,Exact count of train/val/test splits unrecoverable
+Benchmark video duration,10.0,MEASURED,ffprobe source.mp4 / eval_bandwidth.py,Exact duration 10.00 seconds
+Benchmark video total frames,300,MEASURED,OpenCV cap.get(CAP_PROP_FRAME_COUNT),30.00 frames per second
+Benchmark video frame rate,30.0,MEASURED,OpenCV cap.get(CAP_PROP_FPS),Constant frame rate
+Benchmark video horizontal resolution,1920,MEASURED,OpenCV cap.get(CAP_PROP_FRAME_WIDTH),Full HD 1080p
+Benchmark video vertical resolution,1080,MEASURED,OpenCV cap.get(CAP_PROP_FRAME_HEIGHT),Full HD 1080p
+Benchmark video file size,19.41,MEASURED,os.path.getsize(source.mp4) in MB,Exact size 20356191 bytes
+Benchmark video average bitrate,15.53,MEASURED,eval_bandwidth.py,15.53 Mbps H.264 stream
+Temporal sampling stride k,5,FOUND,detect.ipynb:Cell 6 / results.md:36,Effective sampling rate 6.0 FPS
+Sampled frames evaluated,60,MEASURED,sweep_sampling_rate.py / detect.ipynb,300 total frames divided by stride 5
+Raw plate bounding box detections,502,FOUND,detect.ipynb:Cell 12 / results.md:37,Aggregate across all evaluated frames
+Quality gate filter passed crops,261,FOUND,detect.ipynb:Cell 14 / results.md:38,Area >= 1500px and conf >= 0.50
+SORT unique tracklets generated,35,FOUND,detect.ipynb:Cell 14 / results.md:39,IoU threshold 0.30 max_age 15 min_hits 3
+Normalized unique physical plates,34,FOUND,detect.ipynb:Cell 18 / results.md:40,Majority vote collapses 35 tracks to 34 plates
+Raw PaddleOCR exact-match plate accuracy,22.86%,MEASURED,paper_evidence/ablation_corrector.py,8 of 35 plates correct without normalization
+Template-only corrected plate accuracy,65.71%,MEASURED,paper_evidence/ablation_corrector.py,23 of 35 plates correct using UK regex format
+DVLA whitelist-only corrected plate accuracy,68.57%,MEASURED,paper_evidence/ablation_corrector.py,24 of 35 plates correct using 451 tag dictionary
+Full normalizer engine plate accuracy,82.86%,MEASURED,paper_evidence/ablation_corrector.py,29 of 35 plates correct (includes 4 manual overrides)
+Full normalizer without hardcoded overrides,71.43%,MEASURED,paper_evidence/ablation_corrector.py,25 of 35 plates correct (strictly generalized)
+Character-level OCR accuracy on benchmark,82.9%,MEASURED,paper_evidence/eval_ocr_accuracy.py,Levenshtein distance across 35 test plates
+Mean OCR inference confidence score,0.841,MEASURED,paper_evidence/eval_ocr_accuracy.py,PaddleOCR CTC decoder confidence average
+Edge GPU YOLOv8n detection latency,8.7,FOUND,results.md:44 / Colab Tesla T4 benchmark,Batch size 1 at 640x640 resolution
+Edge GPU SORT tracking latency,3.1,FOUND,results.md:45 / Colab Tesla T4 benchmark,Kalman filter prediction and Hungarian matching
+Edge GPU PaddleOCR recognition latency,19.8,FOUND,results.md:46 / Colab Tesla T4 benchmark,CRNN recognition on cropped plate images
+Edge GPU normalization and voting latency,0.5,FOUND,results.md:47 / Colab Tesla T4 benchmark,Regex matching and dictionary lookup
+Edge GPU total frame pipeline latency,32.1,FOUND,results.md:48 / Colab Tesla T4 benchmark,Sum of all pipeline stages per frame
+Edge GPU effective pipeline throughput,31.2,FOUND,results.md:49 / Colab Tesla T4 benchmark,Frames per second on NVIDIA Tesla T4
+Edge CPU YOLOv8n detection latency,82.5,FOUND,results.md:52 / Colab Intel Xeon benchmark,Batch size 1 at 640x640 resolution
+Edge CPU SORT tracking latency,3.2,FOUND,results.md:53 / Colab Intel Xeon benchmark,Kalman filter prediction and Hungarian matching
+Edge CPU PaddleOCR recognition latency,340.0,FOUND,results.md:54 / Colab Intel Xeon benchmark,CRNN recognition on cropped plate images
+Edge CPU normalization and voting latency,6.2,FOUND,results.md:55 / Colab Intel Xeon benchmark,Regex matching and dictionary lookup
+Edge CPU total frame pipeline latency,431.9,FOUND,results.md:56 / Colab Intel Xeon benchmark,Sum of all pipeline stages per frame
+Edge CPU effective pipeline throughput,2.3,FOUND,results.md:57 / Colab Intel Xeon benchmark,Frames per second on Intel Xeon CPU
+Average JSON event payload size,375.14,MEASURED,paper_evidence/eval_bandwidth.py,Bytes per POST /events telemetry payload
+Minimum JSON event payload size,354,MEASURED,paper_evidence/eval_bandwidth.py,Bytes per POST /events telemetry payload
+Maximum JSON event payload size,399,MEASURED,paper_evidence/eval_bandwidth.py,Bytes per POST /events telemetry payload
+Edge continuous bandwidth at 0.1 events/sec,300.1,MEASURED,paper_evidence/eval_bandwidth.py,Bits per second (0.0003 Mbps)
+Edge continuous bandwidth at 1.0 events/sec,3001.1,MEASURED,paper_evidence/eval_bandwidth.py,Bits per second (0.0030 Mbps)
+Bandwidth reduction vs H.264 1080p stream,99.925%,MEASURED,paper_evidence/eval_bandwidth.py,Relative to 4.0 Mbps H.264 video uplink
+Bandwidth reduction vs H.264 4K stream,99.980%,MEASURED,paper_evidence/eval_bandwidth.py,Relative to 15.0 Mbps H.264 video uplink
+Bandwidth reduction vs Raw 1080p stream,99.99979%,MEASURED,paper_evidence/eval_bandwidth.py,Relative to 1.49 Gbps uncompressed stream
+Sequence preservation at 0% to 40% dropout,100.0%,MEASURED,paper_evidence/sweep_dropout.py,Monotonic timestamp ordering across 5 seeds
+Route completion rate at 0% dropout,100.0%,MEASURED,paper_evidence/sweep_dropout.py,Fraction of 4-hop routes intact
+Route completion rate at 10% dropout,90.0%,MEASURED,paper_evidence/sweep_dropout.py,Averaged across 5 random seeds
+Route completion rate at 20% dropout,80.0%,MEASURED,paper_evidence/sweep_dropout.py,Averaged across 5 random seeds
+Route completion rate at 40% dropout,60.0%,MEASURED,paper_evidence/sweep_dropout.py,Averaged across 5 random seeds
+Travel time estimation error under dropout,0.2083,MEASURED,paper_evidence/sweep_dropout.py,Maximum error in seconds across surviving hops
+Identity noise false trajectory stitches,1.000,MEASURED,paper_evidence/robustness_identity_noise.py,Zero spurious cross-links at 0% to 30% noise
+Identity noise trajectory fragmentation at 0%,0.0%,MEASURED,paper_evidence/robustness_identity_noise.py,Baseline trajectory integrity
+Identity noise trajectory fragmentation at 10%,25.0%,MEASURED,paper_evidence/robustness_identity_noise.py,Ghost track generation under 10% OCR noise
+Identity noise trajectory fragmentation at 30%,75.4%,MEASURED,paper_evidence/robustness_identity_noise.py,Ghost track generation under 30% OCR noise
+Blacklist alert recall without normalizer,33.33%,MEASURED,paper_evidence/eval_blacklist_alerts.py,Raw OCR 1-char errors cause 66.67% missed alerts
+Blacklist alert false negative rate without normalizer,66.67%,MEASURED,paper_evidence/eval_blacklist_alerts.py,Exact matching fails on uncorrected OCR
+Blacklist alert recall with full normalizer,100.0%,MEASURED,paper_evidence/eval_blacklist_alerts.py,Normalizer repairs OCR errors into valid plates
+Congestion baseline false positive rate,0.0%,MEASURED,paper_evidence/eval_congestion.py,Zero false congestion alarms under steady flow
+Congestion detection delay for 1.8x surge,13.0,MEASURED,paper_evidence/eval_congestion.py,Minutes to alert trigger
+Congestion detection delay for 2.5x surge,3.6,MEASURED,paper_evidence/eval_congestion.py,Minutes to alert trigger
+Congestion detection for exact 1.5x surge,Not Triggered,MEASURED,paper_evidence/eval_congestion.py,Denominator self-inflation blocks exact 1.5x trigger
+PostgreSQL insert latency at 10k rows,0.82,MEASURED,paper_evidence/benchmark_db_scaling.py,Milliseconds per single event insert
+PostgreSQL insert latency at 100k rows,1.02,MEASURED,paper_evidence/benchmark_db_scaling.py,Milliseconds per single event insert
+PostgreSQL insert latency at 1M rows,1.45,MEASURED,paper_evidence/benchmark_db_scaling.py,Milliseconds per single event insert
+PostgreSQL trajectory query latency at 1M rows,2.45,MEASURED,paper_evidence/benchmark_db_scaling.py,Milliseconds (p50) on indexed plate_text
+PostgreSQL edge transition query latency at 1M rows,1.45,MEASURED,paper_evidence/benchmark_db_scaling.py,Milliseconds (p50) on indexed camera pairs
+Central service peak ingestion throughput,141.61,MEASURED,paper_evidence/load_test_backend.py,Requests per second sustained by FastAPI
+Central service median latency at 1 client,26.96,MEASURED,paper_evidence/load_test_backend.py,Milliseconds per POST /events request
+Central service median latency at 50 clients,278.36,MEASURED,paper_evidence/load_test_backend.py,Milliseconds per POST /events request
+Central service median latency at 100 clients,732.12,MEASURED,paper_evidence/load_test_backend.py,Milliseconds per POST /events request
+Central service error rate at 100 clients,0.70%,MEASURED,paper_evidence/load_test_backend.py,7 drops out of 1000 requests under heavy saturation
+Relational database tables count,7,FOUND,backend/app/models.py,cameras events edges vehicles blacklist alerts plate_disambiguations
+Multi-camera simulator camera count,4,FOUND,simulate_multi_camera.py:line 15,CAM-001 CAM-002 CAM-003 CAM-004
+Multi-camera simulator vehicle count,20,FOUND,simulate_multi_camera.py:line 55,Vehicles replayed across 4 cameras
+Multi-camera corridor total distance,4.15,FOUND,simulate_multi_camera.py:line 25,Kilometers (1.25 + 1.50 + 1.40 km)
+Target vehicle KH06*** total transit time,279.4,FOUND,simulate_multi_camera.py:line 95,Seconds (4 minutes 39.4 seconds)
+Target vehicle KH06*** average corridor speed,53.47,FOUND,simulate_multi_camera.py:line 98,Kilometers per hour
+DVLA area tag whitelist entries,451,FOUND,ocr_enhancements.py:line 85 / detect.ipynb,Valid UK DVLA 2-letter mnemonic prefixes
+Ground truth normalizer overrides,4,FOUND,detect.ipynb:Cell 18 / ocr_enhancements.py,EY09YUS NR02FKD LH13VCY OU62HY
+Sampling rate sweep inference accuracy,MISSING,MISSING,paper_evidence/sweep_sampling_rate.py,Requires GPU execution (>10 min run awaiting approval)

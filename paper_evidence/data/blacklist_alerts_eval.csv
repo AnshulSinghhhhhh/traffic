@@ -1,0 +1,8 @@
+scenario,matching_rule,read_source,noise_rate,tp,fp,fn,precision_pct,recall_pct,f1_score_pct
+Raw OCR (No Correction),exact,raw,0.0,4,0,8,100.0,33.33333333333333,50.0
+Raw OCR (No Correction),fuzzy_lev1,raw,0.0,8,0,4,100.0,66.66666666666666,80.0
+Corrected OCR (DVLA Bounded),exact,corrected,0.0,12,0,0,100.0,100.0,100.0
+Corrected OCR (DVLA Bounded),fuzzy_lev1,corrected,0.0,12,0,0,100.0,100.0,100.0
+Corrected OCR + 5% Noise,exact,corrected,0.05,11,0,1,100.0,91.66666666666666,95.65217391304347
+Corrected OCR + 10% Noise,exact,corrected,0.1,11,0,1,100.0,91.66666666666666,95.65217391304347
+Corrected OCR + 20% Noise,exact,corrected,0.2,10,0,2,100.0,83.33333333333334,90.9090909090909

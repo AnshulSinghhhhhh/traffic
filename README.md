@@ -60,7 +60,8 @@ idahr/
 │                                  synthetic camera streams for testing/demoing
 │                                  cross-camera trajectory stitching (see below)
 ├── backend/                   <- FastAPI app (build this)
-└── frontend/                  <- React + Vite + Tailwind + Leaflet (build this)
+├── frontend/                  <- React + Vite + Tailwind + Leaflet (build this)
+└── paper_evidence/            <- IEEE paper evidence pack (benchmarks, claims, figures, reports)
 ```
 
 ## ML pipeline contract (from `ml/detect.ipynb`)
@@ -165,3 +166,14 @@ having actually measured it.
 5. Run `ml/detect.ipynb` on Kaggle (via `kaggle_pipeline/kaggle_runner.py`)
    to produce a base `events.json`, then run `simulate_multi_camera.py`
    against the live backend to populate the dashboard end to end.
+
+## IEEE Conference Paper Evidence Pack (`paper_evidence/`)
+
+A comprehensive empirical evidence pack supporting an IEEE conference paper submission:
+- `00_summary.md` — Executive summary, deliverables status table, top 10 gaps, and author decisions.
+- `01_system.md` through `05_reproduce_existing_results.md` — Verified system architecture, edge pipeline specifications, central algorithms, dataset provenance, and reproduction reconciliation.
+- `06_gap_experiments.md` — 10 empirical experiments (accuracy ablation, network dropout, noise robustness, bandwidth, alerting, congestion, database scaling, concurrency load testing).
+- `07_figures_and_data.md` through `11_related_work_seeds.md` — Publication-ready figures, reproducibility guides, limitation disclosures, GDPR ethics audit, and 15 DOI-backed citations.
+- `12_claims_ledger.csv` — Sourced ledger of 67 quantitative claims (MEASURED / FOUND / ATTRIBUTED / MISSING).
+- `data/` — Reproducible benchmark CSV outputs.
+

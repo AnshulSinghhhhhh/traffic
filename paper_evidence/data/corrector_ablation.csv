@@ -1,0 +1,4 @@
+mode,exact_matches,total,accuracy_pct,unique_plates,false_merges,missed_merges
+No Correction,8,35,22.857142857142858,35,0,2
+Template Only,23,35,65.71428571428571,34,0,1
+Template + DVLA Whitelist,24,35,68.57142857142857,34,0,1
