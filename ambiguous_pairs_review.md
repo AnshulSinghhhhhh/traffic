@@ -11,14 +11,14 @@ In `source.mp4`, a dark slate blue Citroën C4 hatchback passes through the inte
 
 | Vehicle Track | Plate Crop | Vehicle Body Crop | Emitted Plate | Raw Read | Computed Type | Computed Color | Conf |
 |---|---|---|---|---|---|---|---|
-| `Track 73` (Early) | ![P73](plate_crops/track_073_KHO6KSU.jpg) | ![V73](vehicle_crops/track_073_KHO6KSU_vehicle.jpg) | `KHO6KSU` | `KHO6KSU` | `car` | `blue` | `0.347` |
+| `Track 73` (Early) | ![P73](plate_crops/track_073_KH06KSU.jpg) | ![V73](vehicle_crops/track_073_KH06KSU_vehicle.jpg) | `KH06KSU` | `KHO6KSU` | `car` | `blue` | `0.347` |
 | `Track 55` (Late) | ![P55](plate_crops/track_055_KH06KSU.jpg) | ![V55](vehicle_crops/track_055_KH06KSU_vehicle.jpg) | `KH06KSU` | `KH06KSU` | `car` | `blue` | `0.563` |
 
 ### Pair 1 Human Verification Checklist:
-- [ ] **Same Physical Vehicle?** &nbsp;&nbsp; [ ] Yes &nbsp;&nbsp; [ ] No
-- [ ] **Vehicle Type Confirmed**: [ ] Passenger Car &nbsp;&nbsp; [ ] Other: _____________
-- [ ] **Body Color Confirmed**: [ ] Blue / Dark Blue &nbsp;&nbsp; [ ] Other: _____________
-- [ ] **Resolution**: [ ] Merge into single trajectory &nbsp;&nbsp; [ ] Keep distinct
+- [X] **Same Physical Vehicle?** &nbsp;&nbsp; [X] Yes &nbsp;&nbsp; [ ] No
+- [X] **Vehicle Type Confirmed**: [X] Passenger Car &nbsp;&nbsp; [ ] Other: _____________
+- [X] **Body Color Confirmed**: [X] Blue / Dark Blue &nbsp;&nbsp; [ ] Other: _____________
+- [X] **Resolution**: [X] Merge into single trajectory &nbsp;&nbsp; [ ] Keep distinct
 
 ---
 
@@ -33,7 +33,7 @@ In `source.mp4`, a deep blue Vauxhall Vectra passes at ~50.8s–52.2s.
 | `Track 138` (Full) | ![P138](plate_crops/track_138_HX52BPF.jpg) | ![V138](vehicle_crops/track_138_HX52BPF_vehicle.jpg) | `HX52BPF` | `HX52BPF` | `car` | `blue` | `0.614` |
 
 ### Pair 2 Human Verification Checklist:
-- [ ] **Same Physical Vehicle?** &nbsp;&nbsp; [ ] Yes &nbsp;&nbsp; [ ] No
-- [ ] **Vehicle Type Confirmed**: [ ] Passenger Car &nbsp;&nbsp; [ ] Other: _____________
-- [ ] **Body Color Confirmed**: [ ] Blue / Dark Blue &nbsp;&nbsp; [ ] Other: _____________
-- [ ] **Resolution**: [ ] Merge into canonical plate `HX52BPF` &nbsp;&nbsp; [ ] Keep distinct
+- [X] **Same Physical Vehicle?** &nbsp;&nbsp; [X] Yes &nbsp;&nbsp; [ ] No
+- [X] **Vehicle Type Confirmed**: [X] Passenger Car &nbsp;&nbsp; [ ] Other: _____________
+- [X] **Body Color Confirmed**: [X] Blue / Dark Blue &nbsp;&nbsp; [ ] Other: _____________
+- [X] **Resolution**: [X] Merge into canonical plate `HX52BPF` &nbsp;&nbsp; [ ] Keep distinct

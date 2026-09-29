@@ -11,7 +11,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 294,
+    "plate_bbox": [
+      1045,
+      2029,
+      1275,
+      2142
+    ],
+    "vehicle_bbox": [
+      826,
+      1615,
+      1503,
+      2160
+    ]
   },
   {
     "event_id": 2,
@@ -25,7 +38,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 468,
+    "plate_bbox": [
+      2595,
+      2022,
+      2822,
+      2134
+    ],
+    "vehicle_bbox": [
+      2278,
+      1147,
+      3148,
+      2160
+    ]
   },
   {
     "event_id": 3,
@@ -39,7 +65,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 276,
+    "plate_bbox": [
+      2558,
+      2006,
+      2770,
+      2118
+    ],
+    "vehicle_bbox": [
+      2298,
+      1624,
+      2985,
+      2160
+    ]
   },
   {
     "event_id": 4,
@@ -53,7 +92,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 186,
+    "plate_bbox": [
+      1154,
+      1607,
+      1350,
+      1705
+    ],
+    "vehicle_bbox": [
+      971,
+      1307,
+      1537,
+      1802
+    ]
   },
   {
     "event_id": 5,
@@ -67,7 +119,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": false,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 96,
+    "plate_bbox": [
+      1209,
+      1723,
+      1413,
+      1821
+    ],
+    "vehicle_bbox": [
+      979,
+      1378,
+      1675,
+      1924
+    ]
   },
   {
     "event_id": 6,
@@ -81,7 +146,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 48,
+    "plate_bbox": [
+      2478,
+      1868,
+      2676,
+      1969
+    ],
+    "vehicle_bbox": [
+      2225,
+      1396,
+      2916,
+      2081
+    ]
   },
   {
     "event_id": 7,
@@ -95,7 +173,20 @@
     "ocr_attempts": 6,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 0,
+    "plate_bbox": [
+      963,
+      1755,
+      1210,
+      1859
+    ],
+    "vehicle_bbox": [
+      752,
+      1369,
+      1429,
+      1984
+    ]
   },
   {
     "event_id": 8,
@@ -109,7 +200,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 198,
+    "plate_bbox": [
+      2340,
+      1888,
+      2587,
+      1993
+    ],
+    "vehicle_bbox": [
+      2103,
+      1527,
+      2792,
+      2107
+    ]
   },
   {
     "event_id": 9,
@@ -123,7 +227,20 @@
     "ocr_attempts": 2,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 132,
+    "plate_bbox": [
+      2516,
+      1998,
+      2735,
+      2117
+    ],
+    "vehicle_bbox": [
+      2250,
+      1632,
+      2970,
+      2160
+    ]
   },
   {
     "event_id": 10,
@@ -137,7 +254,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 336,
+    "plate_bbox": [
+      2651,
+      1890,
+      2861,
+      1992
+    ],
+    "vehicle_bbox": [
+      2415,
+      1518,
+      3111,
+      2132
+    ]
   },
   {
     "event_id": 11,
@@ -151,7 +281,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 546,
+    "plate_bbox": [
+      1123,
+      1709,
+      1329,
+      1816
+    ],
+    "vehicle_bbox": [
+      899,
+      1334,
+      1550,
+      1934
+    ]
   },
   {
     "event_id": 12,
@@ -165,7 +308,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": false,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 402,
+    "plate_bbox": [
+      2506,
+      2049,
+      2708,
+      2155
+    ],
+    "vehicle_bbox": [
+      2245,
+      1634,
+      2959,
+      2160
+    ]
   },
   {
     "event_id": 13,
@@ -179,7 +335,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": false,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 570,
+    "plate_bbox": [
+      3280,
+      1309,
+      3413,
+      1398
+    ],
+    "vehicle_bbox": [
+      3068,
+      1042,
+      3593,
+      1477
+    ]
   },
   {
     "event_id": 14,
@@ -193,7 +362,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 402,
+    "plate_bbox": [
+      943,
+      1991,
+      1173,
+      2098
+    ],
+    "vehicle_bbox": [
+      714,
+      1582,
+      1423,
+      2160
+    ]
   },
   {
     "event_id": 15,
@@ -207,7 +389,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 744,
+    "plate_bbox": [
+      2473,
+      1512,
+      2651,
+      1611
+    ],
+    "vehicle_bbox": [
+      2307,
+      1214,
+      2802,
+      1680
+    ]
   },
   {
     "event_id": 16,
@@ -221,7 +416,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 486,
+    "plate_bbox": [
+      1026,
+      1824,
+      1227,
+      1928
+    ],
+    "vehicle_bbox": [
+      837,
+      1524,
+      1423,
+      1957
+    ]
   },
   {
     "event_id": 17,
@@ -235,7 +443,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 702,
+    "plate_bbox": [
+      2542,
+      2024,
+      2770,
+      2132
+    ],
+    "vehicle_bbox": [
+      2294,
+      1614,
+      3015,
+      2160
+    ]
   },
   {
     "event_id": 18,
@@ -249,7 +470,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 816,
+    "plate_bbox": [
+      1058,
+      1739,
+      1267,
+      1851
+    ],
+    "vehicle_bbox": [
+      853,
+      1396,
+      1485,
+      1940
+    ]
   },
   {
     "event_id": 19,
@@ -263,7 +497,20 @@
     "ocr_attempts": 5,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 750,
+    "plate_bbox": [
+      1041,
+      1988,
+      1264,
+      2101
+    ],
+    "vehicle_bbox": [
+      823,
+      1549,
+      1515,
+      2132
+    ]
   },
   {
     "event_id": 20,
@@ -277,7 +524,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 594,
+    "plate_bbox": [
+      2553,
+      1806,
+      2754,
+      1908
+    ],
+    "vehicle_bbox": [
+      2340,
+      1452,
+      2978,
+      2003
+    ]
   },
   {
     "event_id": 21,
@@ -291,7 +551,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 888,
+    "plate_bbox": [
+      2541,
+      1752,
+      2745,
+      1857
+    ],
+    "vehicle_bbox": [
+      2308,
+      1425,
+      2953,
+      1932
+    ]
   },
   {
     "event_id": 22,
@@ -305,7 +578,20 @@
     "ocr_attempts": 2,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 732,
+    "plate_bbox": [
+      1089,
+      1872,
+      1293,
+      1982
+    ],
+    "vehicle_bbox": [
+      605,
+      1926,
+      1375,
+      2160
+    ]
   },
   {
     "event_id": 23,
@@ -319,7 +605,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": false,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 906,
+    "plate_bbox": [
+      1060,
+      1997,
+      1268,
+      2121
+    ],
+    "vehicle_bbox": [
+      812,
+      1584,
+      1548,
+      2160
+    ]
   },
   {
     "event_id": 24,
@@ -333,7 +632,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 936,
+    "plate_bbox": [
+      2321,
+      1483,
+      2485,
+      1581
+    ],
+    "vehicle_bbox": [
+      2111,
+      1020,
+      2737,
+      1663
+    ]
   },
   {
     "event_id": 25,
@@ -347,7 +659,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 1176,
+    "plate_bbox": [
+      2499,
+      2008,
+      2731,
+      2122
+    ],
+    "vehicle_bbox": [
+      2186,
+      1408,
+      3027,
+      2160
+    ]
   },
   {
     "event_id": 26,
@@ -361,7 +686,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 1428,
+    "plate_bbox": [
+      2539,
+      1934,
+      2767,
+      2044
+    ],
+    "vehicle_bbox": [
+      2298,
+      1507,
+      2969,
+      2129
+    ]
   },
   {
     "event_id": 27,
@@ -375,7 +713,20 @@
     "ocr_attempts": 3,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 1338,
+    "plate_bbox": [
+      948,
+      1989,
+      1199,
+      2109
+    ],
+    "vehicle_bbox": [
+      687,
+      1613,
+      1453,
+      2160
+    ]
   },
   {
     "event_id": 28,
@@ -389,7 +740,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 1272,
+    "plate_bbox": [
+      2390,
+      1845,
+      2595,
+      1947
+    ],
+    "vehicle_bbox": [
+      2125,
+      1483,
+      2811,
+      2034
+    ]
   },
   {
     "event_id": 29,
@@ -403,7 +767,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": false,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 1716,
+    "plate_bbox": [
+      1008,
+      1849,
+      1215,
+      1948
+    ],
+    "vehicle_bbox": [
+      763,
+      1430,
+      1455,
+      2058
+    ]
   },
   {
     "event_id": 30,
@@ -417,7 +794,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 1410,
+    "plate_bbox": [
+      995,
+      1942,
+      1220,
+      2050
+    ],
+    "vehicle_bbox": [
+      684,
+      1383,
+      1514,
+      2155
+    ]
   },
   {
     "event_id": 31,
@@ -431,7 +821,20 @@
     "ocr_attempts": 5,
     "regex_valid_indian_format": false,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 1548,
+    "plate_bbox": [
+      1167,
+      1884,
+      1380,
+      2002
+    ],
+    "vehicle_bbox": [
+      480,
+      1919,
+      1364,
+      2160
+    ]
   },
   {
     "event_id": 32,
@@ -445,7 +848,20 @@
     "ocr_attempts": 4,
     "regex_valid_indian_format": true,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 1566,
+    "plate_bbox": [
+      1112,
+      2004,
+      1333,
+      2118
+    ],
+    "vehicle_bbox": [
+      880,
+      1600,
+      1608,
+      2160
+    ]
   },
   {
     "event_id": 33,
@@ -459,7 +875,20 @@
     "ocr_attempts": 6,
     "regex_valid_indian_format": false,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 1770,
+    "plate_bbox": [
+      2609,
+      2066,
+      2788,
+      2160
+    ],
+    "vehicle_bbox": [
+      2313,
+      1578,
+      3126,
+      2160
+    ]
   },
   {
     "event_id": 34,
@@ -473,7 +902,20 @@
     "ocr_attempts": 8,
     "regex_valid_indian_format": false,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 1734,
+    "plate_bbox": [
+      2415,
+      1207,
+      2552,
+      1294
+    ],
+    "vehicle_bbox": [
+      2242,
+      995,
+      2692,
+      1353
+    ]
   },
   {
     "event_id": 35,
@@ -487,6 +929,19 @@
     "ocr_attempts": 6,
     "regex_valid_indian_format": false,
     "lat": 12.9716,
-    "lng": 77.5946
+    "lng": 77.5946,
+    "best_frame_idx": 1632,
+    "plate_bbox": [
+      894,
+      2041,
+      1121,
+      2144
+    ],
+    "vehicle_bbox": [
+      629,
+      1621,
+      1408,
+      2160
+    ]
   }
 ]
