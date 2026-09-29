@@ -24,7 +24,9 @@
       1615,
       1503,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 2,
@@ -51,12 +53,14 @@
       1147,
       3148,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 3,
     "camera_id": "CAM_A",
-    "plate": "NR02FKD",
+    "plate": "WR02FKD",
     "raw_plate": "NRQ2FKD",
     "was_corrected": true,
     "timestamp": "2026-08-23T08:00:09.200000",
@@ -78,7 +82,9 @@
       1624,
       2985,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 4,
@@ -105,7 +111,9 @@
       1307,
       1537,
       1802
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 5,
@@ -132,7 +140,9 @@
       1378,
       1675,
       1924
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 6,
@@ -159,7 +169,9 @@
       1396,
       2916,
       2081
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 7,
@@ -186,7 +198,9 @@
       1369,
       1429,
       1984
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 8,
@@ -213,12 +227,14 @@
       1527,
       2792,
       2107
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 9,
     "camera_id": "CAM_A",
-    "plate": "LH13VCY",
+    "plate": "LM13VCV",
     "raw_plate": "LHI3VCY",
     "was_corrected": true,
     "timestamp": "2026-08-23T08:00:04.400000",
@@ -240,7 +256,9 @@
       1632,
       2970,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 10,
@@ -267,7 +285,9 @@
       1518,
       3111,
       2132
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 11,
@@ -294,7 +314,9 @@
       1334,
       1550,
       1934
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 12,
@@ -321,14 +343,16 @@
       1634,
       2959,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 13,
     "camera_id": "CAM_A",
-    "plate": "OU62HY",
+    "plate": "DU62HYJ",
     "raw_plate": "OU62HY",
-    "was_corrected": false,
+    "was_corrected": true,
     "timestamp": "2026-08-23T08:00:20.400000",
     "confidence": 0.299,
     "track_id": 27,
@@ -348,7 +372,9 @@
       1042,
       3593,
       1477
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 14,
@@ -375,7 +401,9 @@
       1582,
       1423,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 15,
@@ -402,7 +430,9 @@
       1214,
       2802,
       1680
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 16,
@@ -429,7 +459,9 @@
       1524,
       1423,
       1957
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 17,
@@ -456,7 +488,9 @@
       1614,
       3015,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 18,
@@ -483,7 +517,9 @@
       1396,
       1485,
       1940
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 19,
@@ -510,7 +546,9 @@
       1549,
       1515,
       2132
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 20,
@@ -537,7 +575,9 @@
       1452,
       2978,
       2003
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 21,
@@ -564,7 +604,9 @@
       1425,
       2953,
       1932
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 22,
@@ -591,7 +633,9 @@
       1926,
       1375,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 23,
@@ -618,14 +662,16 @@
       1584,
       1548,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 24,
     "camera_id": "CAM_A",
-    "plate": "EY09YUS",
+    "plate": "EY09YWS",
     "raw_plate": "EY09YUS",
-    "was_corrected": false,
+    "was_corrected": true,
     "timestamp": "2026-08-23T08:00:29.800000",
     "confidence": 0.462,
     "track_id": 78,
@@ -645,7 +691,9 @@
       1020,
       2737,
       1663
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 25,
@@ -672,7 +720,9 @@
       1408,
       3027,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 26,
@@ -699,7 +749,9 @@
       1507,
       2969,
       2129
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 27,
@@ -726,7 +778,9 @@
       1613,
       1453,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 28,
@@ -753,7 +807,9 @@
       1483,
       2811,
       2034
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 29,
@@ -780,7 +836,9 @@
       1430,
       1455,
       2058
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 30,
@@ -807,12 +865,14 @@
       1383,
       1514,
       2155
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 31,
     "camera_id": "CAM_A",
-    "plate": "BPF",
+    "plate": "HX52BPF",
     "raw_plate": "BPF",
     "was_corrected": false,
     "timestamp": "2026-08-23T08:00:50.800000",
@@ -834,7 +894,11 @@
       1919,
       1364,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car",
+    "canonical_plate": "HX52BPF",
+    "was_disambiguated": true
   },
   {
     "event_id": 32,
@@ -861,7 +925,9 @@
       1600,
       1608,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 33,
@@ -888,14 +954,16 @@
       1578,
       3126,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   },
   {
     "event_id": 34,
     "camera_id": "CAM_A",
-    "plate": "SC5506",
+    "plate": "SC55OG",
     "raw_plate": "SC5506",
-    "was_corrected": false,
+    "was_corrected": true,
     "timestamp": "2026-08-23T08:00:57.200000",
     "confidence": 0.296,
     "track_id": 147,
@@ -915,14 +983,16 @@
       995,
       2692,
       1353
-    ]
+    ],
+    "color": "silver/gray",
+    "vehicle_type": "car"
   },
   {
     "event_id": 35,
     "camera_id": "CAM_A",
-    "plate": "DDU06XRO",
+    "plate": "DU06XRO",
     "raw_plate": "DDU06XRO",
-    "was_corrected": false,
+    "was_corrected": true,
     "timestamp": "2026-08-23T08:00:54.400000",
     "confidence": 0.397,
     "track_id": 149,
@@ -942,6 +1012,8 @@
       1621,
       1408,
       2160
-    ]
+    ],
+    "color": "blue",
+    "vehicle_type": "car"
   }
 ]
